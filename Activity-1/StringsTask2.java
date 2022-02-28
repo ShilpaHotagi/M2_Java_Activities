@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class StringTask2 {
+public class StringsTask2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String player1 = sc.nextLine(); // Taking Player1 full Name as input
