@@ -1,26 +1,29 @@
 import java.util.*;
-
-public class Swap {
-
-	public static void main(String a[])
-	{
-        Scanner sc=new Scanner(System.in);
-
-		ArrayList<String> ArrList = new ArrayList<String>();
-		System.out.println("Enter the 5 team names:");
-		ArrList.add(sc.nextLine());
-		ArrList.add(sc.nextLine());
-		ArrList.add(sc.nextLine());
-		ArrList.add(sc.nextLine());
-		ArrList.add(sc.nextLine());
+import java.io.*;
 
 
-        System.out.println("Enter swap positions:");
-        int num1=sc.nextInt();
-		int num2=sc.nextInt();
+class ArrayList
+{
+public static void main(String []args){
 
-		Collections.swap(ArrList, num2, num1);
-		System.out.println("After Swap the ArrayList");
-		System.out.println(ArrList);
-	}
+
+
+List al = new ArrayList();
+
+al.add("Sunrises Hyderabad");
+al.add("Delhi capitals");
+al.add("Royal Challengers Bangalore");
+al.add("Kolkata Knight Riders");
+al.add("Mumbai Indians");
+
+
+System.out.println(al);
+
+Collections.swap(al, 0, 2);
+
+System.out.println(al);
+
+
+
+}
 }
